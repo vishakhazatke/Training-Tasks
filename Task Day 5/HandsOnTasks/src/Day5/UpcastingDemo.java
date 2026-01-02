@@ -1,0 +1,32 @@
+package Day5;
+
+class AnimalDemo {
+	
+	void action() {
+		
+		System.out.println("Animal takes action");
+	}
+	
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class DogDemo extends AnimalDemo {
+	
+    @Override
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class UpcastingDemo {
+
+	public static void main(String[] args) {
+
+		AnimalDemo a1 = new DogDemo();
+		a1.sound();
+		a1.action();
+	}
+
+}

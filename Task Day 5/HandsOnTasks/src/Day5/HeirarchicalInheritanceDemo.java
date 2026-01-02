@@ -1,0 +1,68 @@
+package Day5;
+
+class Teacher{
+	
+	int teacherId = 1;
+	String teacherName = "Teacher 1";
+	int teacherAge = 30;
+	
+	void teacherDetails() {
+		
+		System.out.println("The Teacher ID is : " + teacherId);
+		System.out.println("The Teacher Name is : " + teacherName);
+		System.out.println("The Teacher Age is : " + teacherAge);
+
+	}
+}
+
+class MathTeacher extends Teacher{
+	
+	int MteacherId = 2;
+	String MteacherName = "Maths Teacher";
+	int MteacherAge = 32;
+	String subject = "Maths";
+	
+
+	void mathsTeacherDetails() {
+		
+		System.out.println("The Maths Teacher ID is : " + MteacherId);
+		System.out.println("The Maths Teacher Name is : " + MteacherName);
+		System.out.println("The Maths Teacher Age is : " + MteacherAge);
+		System.out.println("The Maths Teacher Teaches is : " + subject);
+
+	}
+	
+}
+
+class ScienceTeacher extends Teacher{
+	
+	int SteacherId = 3;
+	String SteacherName = "Science Teacher";
+	int SteacherAge = 35;
+	String subject = "Science";
+	
+
+	void scienceTeacherDetails() {
+		
+		System.out.println("The Science Teacher ID is : " + SteacherId);
+		System.out.println("The Science Teacher Name is : " + SteacherName);
+		System.out.println("The Science Teacher Age is : " + SteacherAge);
+		System.out.println("The Science Teacher Teaches is : " + subject);
+
+	}
+	
+}
+public class HeirarchicalInheritanceDemo {
+
+	public static void main(String[] args) {
+
+		ScienceTeacher st = new ScienceTeacher();
+		st.scienceTeacherDetails();
+		st.teacherDetails();
+		
+		MathTeacher mt = new MathTeacher();
+		mt.mathsTeacherDetails();
+		mt.teacherDetails();
+	}
+
+}

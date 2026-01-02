@@ -1,0 +1,40 @@
+package Day5;
+
+class StudentDemo{
+	
+	int studentId = 1;
+	int studentAge = 22;
+	String studentName = "Vishakha";
+	
+	void studentDetails() {
+		
+		System.out.println("The Student Id is " + studentId);
+		System.out.println("The Student Age is " + studentAge);
+		System.out.println("The Student Name is " + studentName);
+		
+	}
+}
+
+class EmployeeDemo extends StudentDemo{
+	
+	int employeeId = 10;
+	String employeeName = "Employee 1";
+	
+	void employeeDetails() {
+		
+		System.out.println("The Employee Id is " + employeeId);
+		System.out.println("The Employee Name is " + employeeName);
+	}
+	
+}
+public class SingleInheritanceDemo  {
+
+	public static void main(String[] args) {
+
+		EmployeeDemo e1 = new EmployeeDemo();
+		e1.employeeDetails();
+		e1.studentDetails();
+			
+	}
+
+}

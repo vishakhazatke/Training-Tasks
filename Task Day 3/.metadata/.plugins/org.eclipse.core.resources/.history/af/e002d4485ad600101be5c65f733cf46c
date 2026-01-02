@@ -1,0 +1,15 @@
+package Day3;
+
+public class MethodDemo {
+	
+	void Singing(String name) {
+		System.out.println("I am singing");
+	}
+
+	public static void main(String[] args) {
+
+		MethodDemo m1 = new MethodDemo();
+		m1.Singing("Vishakha");
+	}
+
+}

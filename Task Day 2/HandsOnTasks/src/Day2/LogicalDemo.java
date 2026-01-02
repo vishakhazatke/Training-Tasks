@@ -1,0 +1,23 @@
+package Day2;
+
+import java.util.Scanner;
+
+public class LogicalDemo {
+
+	public static void main(String[] args) {
+
+	 Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter 2 Numbers for Logical operations");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		
+		boolean p = (a > 0);
+		boolean q = (b > 0);
+		
+		System.out.println(p && q);
+		System.out.println(p || q);
+		System.out.println(!p);
+	}
+
+}

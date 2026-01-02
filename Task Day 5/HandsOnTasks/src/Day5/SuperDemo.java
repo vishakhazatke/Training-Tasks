@@ -1,0 +1,68 @@
+package Day5;
+
+class Vehicle{
+	
+	int vehicleId;
+	String VehicleName;
+	
+	Vehicle(){
+		
+		System.out.println("In Default Vehicle Constructor");
+	}
+	
+	Vehicle(int id, String name){
+		
+		this.vehicleId = id;
+		this.VehicleName = name;
+	}
+	
+	void vehicleDetails() {
+		
+		System.out.println("The Vehicle Id is : " + vehicleId);
+		System.out.println("The Vehicle name is : " + VehicleName);
+	}
+}
+
+class Car extends Vehicle{
+	
+	int CarId;
+	String CarName;
+	
+	Car(){
+	
+		System.out.println("In Car Default Constructor");
+	}
+	
+	Car(int id, String name){
+		
+		super.vehicleId = id;
+		super.VehicleName = name;
+		
+		this.CarId = id;
+		this.CarName = name;
+	}
+	
+	void carDetails() {
+		
+		System.out.println("The car Id is : " + CarId);
+		System.out.println("The car name is : " + CarName);
+		
+		System.out.println("The Vehicle Id from car class is : " + vehicleId);
+		System.out.println("The Vehicle name from car class is : " + VehicleName);
+	}
+}
+
+public class SuperDemo {
+
+	public static void main(String[] args) {
+
+		Vehicle v1 = new Vehicle(101, "Bike");
+		
+		Car c1 = new Car(201, "Altroz");
+		
+		v1.vehicleDetails();
+		c1.carDetails();
+	}
+}
+
+

@@ -1,0 +1,16 @@
+package Day3;
+
+public class PassByValueDemo {
+
+	static void changeValue(int num1) {
+		num1 = 1000;
+	}
+	public static void main(String[] args) {
+		
+		int num = 100;
+
+		PassByValueDemo.changeValue(num);
+		System.out.println("The changed value is " + num);
+	}
+
+}

@@ -1,0 +1,44 @@
+package Day4;
+
+class Employee{
+	
+	private String name;
+	private int age;
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public int getAge() {
+		return age;
+	}
+	
+	public void setAge(int age) {
+		if(age > 0) {
+		  this.age = age;
+		}
+		
+		else {
+			System.out.println("Age cannot be negative");
+		}
+	}
+		
+}
+
+public class EncapsulationDemo {
+
+	public static void main(String[] args) {
+
+		Employee e1 = new Employee();
+		e1.setName("Vishakha");
+		e1.setAge(22);
+		
+		System.out.println("The Employee name is : " + e1.getName());
+		System.out.println("The Employee age is : " + e1.getAge());
+	}
+
+}

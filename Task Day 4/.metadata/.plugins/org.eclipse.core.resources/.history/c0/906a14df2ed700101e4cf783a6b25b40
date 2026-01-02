@@ -1,0 +1,31 @@
+package Day4;
+
+class Parent{
+	
+	void CarDetails() {
+		
+		System.out.println("I have Tata Nexon car");
+	}
+}
+
+class Child extends Parent{
+	
+	void CarDetails() {
+		
+		System.out.println("I have Tata Altroz Car");
+	}
+	
+}
+public class RuntimePolymorphismDemo {
+
+	public static void main(String[] args) {
+
+		Parent p1 = new Parent();
+		p1.CarDetails();
+		
+		Child c1 = new Child();
+		c1.CarDetails();
+		
+	}
+
+}

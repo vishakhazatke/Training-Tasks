@@ -1,0 +1,56 @@
+package Day1;
+
+import java.util.Scanner;
+
+public class SimpleMenuCalculator {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Press 0 for Exit");
+		System.out.println("Press 1 for Addition");
+		System.out.println("Press 2 for Substraction");
+		System.out.println("Press 3 for Multiplication");
+		System.out.println("Press 4 for Division");
+
+		int ch = sc.nextInt();
+		
+		if(ch == 0) {
+			System.out.println("Exit");
+			sc.close();
+			return;
+		}
+		
+		System.out.println("Enter First Number");
+		double num1 = sc.nextDouble();
+		
+		System.out.println("Enter Second Number");
+		double num2 = sc.nextDouble();
+		
+		switch(ch) {
+			
+		case 1:
+			System.out.println("Addition of two numbers are : " + (num1 + num2));
+			break;
+			
+		case 2:
+			System.out.println("Substraction of two numbers are : " + (num1 - num2));
+			break;
+			
+		case 3:
+			System.out.println("Multiplication of two numbers are : " + (num1 * num2));
+			break;
+			
+		case 4:
+			if(num2 != 0)
+			System.out.println("Division of two numbers are : " + (num1 / num2));
+			else
+				System.out.println("Cannot divide by Zero");
+			break;
+			
+			default:
+				System.out.println("Invalid choice");
+		}
+	}
+}
+

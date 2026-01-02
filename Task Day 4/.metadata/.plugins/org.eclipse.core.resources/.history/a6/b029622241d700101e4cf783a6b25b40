@@ -1,0 +1,25 @@
+package Day4;
+
+public class InterfaceVehicleImpl {
+
+	    public static void main(String[] args) {
+	        
+	     
+	        InterfaceVehicle.displayInterfaceInfo();
+	        System.out.println("----------------------------------");
+
+	        CarDemoo myCar = new CarDemoo();
+
+
+	        myCar.startEngine();
+
+
+	        myCar.honkHorn();
+
+	        System.out.println("----------------------------------");
+	        
+	    }
+	
+
+
+}

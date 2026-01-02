@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                            http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="addressBean" class="com.example.spring.Address">
+        <constructor-arg value="Pune"/>
+    </bean>
+
+    <bean id="empSetter"
+          class="com.example.spring.Employee"
+          scope="prototype"
+          init-method="init"
+          destroy-method="destroy">
+
+        <property name="id" value="101"/>
+        <property name="name" value="Vishakha"/>
+        <property name="address" ref="addressBean"/>
+
+    </bean>
+
+    <bean id="empConstructor" class="com.example.spring.Employee">
+        <constructor-arg value="102"/>
+        <constructor-arg value="Zatke"/>
+        <constructor-arg ref="addressBean"/>
+    </bean>
+
+</beans>
+

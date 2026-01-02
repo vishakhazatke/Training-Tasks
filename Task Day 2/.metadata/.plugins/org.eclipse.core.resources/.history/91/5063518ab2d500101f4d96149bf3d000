@@ -1,0 +1,77 @@
+package Day2;
+
+public class BestDemo {
+
+    public static void main(String[] args) {
+
+        boolean isValidUser = true;
+
+        boolean isAdmin = false;
+
+        if (isValidUser) {
+            System.out.println("User is valid");
+        }
+
+        if (isAdmin) {
+            System.out.println("Admin access granted");
+
+        } 
+        else {
+            System.out.println("Normal user access");
+        }
+
+        String userRole = "USER";
+
+        switch (userRole) {
+
+            case "ADMIN":
+
+                System.out.println("Admin Panel Access");
+                break;
+
+            case "USER":
+
+                System.out.println("User Dashboard Access");
+                break;
+
+            case "GUEST":
+
+                System.out.println("Guest View Access");
+               break;
+
+            default:
+
+                System.out.println("Unknown role");
+        }
+
+        String[] products = {"Mobile", "Laptop", "Tablet"};
+
+        System.out.println("Product List:");
+
+        for (String product : products) {   
+
+            System.out.println(product);
+
+        }
+
+        int age = 20;
+
+        boolean hasID = true;
+
+        if (age >= 18) {
+
+            if (hasID) {
+
+                System.out.println("Eligible for entry (Nested if example)");
+            }
+        }
+
+        if (age < 18 || !hasID) {
+
+            System.out.println("Not eligible for entry");
+            return;
+        }
+
+        System.out.println("Eligible for entry (Clean condition example)");
+    }
+}

@@ -1,0 +1,42 @@
+package Day5;
+
+class AnimalDemoo {
+    public void makeSound() {
+        System.out.println("Animal is making a sound");
+    }
+}
+
+class DogDemoo extends AnimalDemoo {
+    @Override
+    public void makeSound() {
+        System.out.println("Dog is barking");
+    }
+
+    public void fetch() {
+        System.out.println("Dog is fetching a ball");
+    }
+}
+
+public class DowncastingDemo {
+    public static void main(String[] args) {
+        // 1. Upcasting: Assigning a child object to a parent reference (implicit)
+        AnimalDemoo animalRef = new DogDemoo();
+
+        // 2. The parent reference cannot directly access child-specific methods
+        animalRef.makeSound(); // Calls Dog's overridden method
+
+        // animalRef.fetch(); // Compile error: Animal class doesn't have fetch()
+
+        // 3. Downcasting: Converting the parent reference back to a child reference (explicit)
+        // Check if the object is an instance of Dog before casting
+        if (animalRef instanceof DogDemoo) {
+            DogDemoo dogRef = (DogDemoo) animalRef; // Explicit downcast
+            
+            // Now the child reference can access all methods
+            dogRef.makeSound(); // Calls Dog's overridden method
+            dogRef.fetch();     // Calls Dog's specific method
+        } else {
+            System.out.println("Cannot downcast to Dog type.");
+        }
+    }
+}

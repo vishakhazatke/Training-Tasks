@@ -1,0 +1,20 @@
+package Day5;
+
+final class ParentDemoo{
+	
+	void career() {
+		
+		System.out.println("Doctor");
+	}
+}
+
+
+public class FinalInheritanceDemo {
+
+	public static void main(String[] args) {
+
+		ParentDemoo p1 = new ParentDemoo();
+		p1.career();
+	}
+
+}

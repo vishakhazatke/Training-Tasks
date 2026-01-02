@@ -1,0 +1,25 @@
+package Day2;
+
+public class AssignmentOpDemo {
+
+	public static void main(String[] args) {
+
+		int a = 10;
+		int b = 20;
+		
+		int z = a;
+		z += b;
+		System.out.println("The value of z is : " + z);
+		
+		z -= b;
+		System.out.println("The value of z is : " + z);
+
+		z *= 2;
+		System.out.println("The value of z is : " + z);
+
+		z /= 2;
+		System.out.println("The value of z is : " + z);
+
+	}
+
+}

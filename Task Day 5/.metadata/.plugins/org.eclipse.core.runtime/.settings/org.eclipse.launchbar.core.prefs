@@ -1,0 +1,13 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:SingleInheritanceDemo,org.eclipse.launchbar.core.descriptorType.default\:MultilevelInheritanceDemo,org.eclipse.launchbar.core.descriptorType.default\:HeirarchicalInheritanceDemo,org.eclipse.launchbar.core.descriptorType.default\:ThisandsuperDemo,org.eclipse.launchbar.core.descriptorType.default\:RuntimePolymorphismDemo,org.eclipse.launchbar.core.descriptorType.default\:CompiletimePolymorphism,org.eclipse.launchbar.core.descriptorType.default\:SuperDemo,org.eclipse.launchbar.core.descriptorType.default\:UpcastingDemo,org.eclipse.launchbar.core.descriptorType.default\:DowncastingDemo,org.eclipse.launchbar.core.descriptorType.default\:FinalDemo
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:CompiletimePolymorphism/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:CompiletimePolymorphism/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:HeirarchicalInheritanceDemo/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:HeirarchicalInheritanceDemo/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:MultilevelInheritanceDemo/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:MultilevelInheritanceDemo/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:SingleInheritanceDemo/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:SingleInheritanceDemo/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

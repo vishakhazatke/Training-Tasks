@@ -1,0 +1,26 @@
+package Day2;
+
+import java.util.Scanner;
+
+public class NestedIfDemo {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Your Marks to check Pass or Fail");
+		
+		double marks = sc.nextDouble();
+		
+		if(marks >= 35) {
+			if(marks >= 75) {
+				System.out.println("Pass with distinction");
+			}
+			else {
+				System.out.println("Pass");
+			}
+		}
+		else {
+			System.out.println("Fail");
+		}
+	}
+}

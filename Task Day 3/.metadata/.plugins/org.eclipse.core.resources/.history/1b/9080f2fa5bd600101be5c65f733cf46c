@@ -1,0 +1,23 @@
+package Day3;
+
+class StudentDemo{
+	
+	void Student(int id, String name) {
+		System.out.println("The id of student is " + id + " and the student name is " + name);
+	}
+	
+	void Student(int id, String name, int age) {
+		System.out.println("The id of student is " + id + " the student name is " + name + " and the age is " + age);
+	}
+}
+public class MethodOverloadingDemo {
+
+	public static void main(String[] args) {
+
+		StudentDemo d1 = new StudentDemo();
+		d1.Student(1, "Vishakha");
+		
+		StudentDemo d2 = new StudentDemo();
+		d2.Student(2, "Vishu", 22);
+	}
+}

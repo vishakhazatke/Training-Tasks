@@ -1,0 +1,28 @@
+package Day3;
+
+public class StaticDemo {
+
+	static int a = 10;
+	
+	static int b = 20;
+	
+	int c = 30;
+	
+	static {
+		System.out.println("Static Block Before Main");
+	}
+	
+	
+	public static void main(String[] args) {
+
+		System.out.println("The Static variable a = " + a);
+		
+		System.out.println("The Static variable b = " + b);
+
+        StaticDemo sd = new StaticDemo();
+		System.out.println("The Non-static variable c = " + sd.c);
+
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package Day4;
+
+interface InterfaceDemo {
+
+	void vehicleDetails();
+	
+	void applyBreaks();
+	
+}
+
+class VehicleDemoo implements InterfaceDemo {
+
+	@Override
+	public void vehicleDetails() {
+
+		System.out.println("Vehicle is a Car");
+	}
+
+	@Override
+	public void applyBreaks() {
+
+		System.out.println("Car should apply break");
+	}	
+	
+}
