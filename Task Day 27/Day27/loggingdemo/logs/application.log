@@ -1,0 +1,30 @@
+2026-01-14 16:20:25 INFO  com.example.loggingdemo.LoggingdemoApplication - Starting LoggingdemoApplication using Java 17.0.11 with PID 1714812 (C:\Users\Zatke Sir\Desktop\Tasks\Task Day 27\Day27\loggingdemo\target\classes started by Zatke Sir in C:\Users\Zatke Sir\Desktop\Tasks\Task Day 27\Day27\loggingdemo)
+2026-01-14 16:20:25 INFO  com.example.loggingdemo.LoggingdemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-14 16:20:29 INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-14 16:20:29 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-14 16:20:29 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-14 16:20:29 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-14 16:20:30 INFO  org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 4276 ms
+2026-01-14 16:20:31 INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-01-14 16:20:31 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-14 16:20:32 INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-14 16:20:32 INFO  com.example.loggingdemo.LoggingdemoApplication - Started LoggingdemoApplication in 8.664 seconds (process running for 14.062)
+2026-01-14 16:22:04 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-14 16:22:04 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-14 16:22:04 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2026-01-14 16:22:04 INFO  com.example.loggingdemo.controller.DemoController - Controller method started
+2026-01-14 16:22:04 INFO  com.example.loggingdemo.service.DemoService - Service method started
+2026-01-14 16:22:04 WARN  com.example.loggingdemo.service.DemoService - Name is null or Empty
+2026-01-14 16:22:04 INFO  com.example.loggingdemo.controller.DemoController - Controller method finished
+2026-01-14 16:22:27 INFO  com.example.loggingdemo.controller.DemoController - Controller method started
+2026-01-14 16:22:27 INFO  com.example.loggingdemo.service.DemoService - Service method started
+2026-01-14 16:22:27 DEBUG com.example.loggingdemo.service.DemoService - Processing name: Vishakha
+2026-01-14 16:22:27 INFO  com.example.loggingdemo.service.DemoService - Service method completed
+2026-01-14 16:22:27 INFO  com.example.loggingdemo.controller.DemoController - Controller method finished
+2026-01-14 16:23:15 INFO  com.example.loggingdemo.controller.DemoController - Controller method started
+2026-01-14 16:23:15 INFO  com.example.loggingdemo.service.DemoService - Service method started
+2026-01-14 16:23:15 WARN  com.example.loggingdemo.service.DemoService - Name is null or Empty
+2026-01-14 16:23:15 INFO  com.example.loggingdemo.controller.DemoController - Controller method finished
+2026-01-14 16:27:29 WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-01-14 16:29:36 INFO  org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-14 16:29:38 INFO  org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
