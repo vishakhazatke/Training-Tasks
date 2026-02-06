@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  app:
+    image: devopsdemo-app
+    ports:
+      - "8080:8080"
+
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: testdb
